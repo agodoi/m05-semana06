@@ -162,7 +162,7 @@ Vamos acender um **LED** controlado por um **transistor NPN (BC548)**.
 - **1 Resistor de 330Ω** (limita a corrente do LED)
 - **1 Fonte de 5V** (pode ser uma pilha ou um Arduino)
 
-### 🔧 Como Montar:
+### 🔧 Como Montar: siga exatamente o circuito da imagem
 
 <img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/arduino-led-bc548.png" width="1000">
 

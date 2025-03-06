@@ -106,15 +106,15 @@ Um transistor bipolar (como o **BC548** e o **TIP41C**) possui **três terminais
 
 O **NPN** é o que usaremos como exemplo.
 
-N ➝ Negativo, pino Coletor (C)
-
-P ➝ Positivo, pino Base (B)
-
-N ➝ Negativo, pino Emissor (E)
+- N ➝ Negativo, pino Coletor (C)
+- P ➝ Positivo, pino Base (B)
+- N ➝ Negativo, pino Emissor (E)
 
 ## 📌 Como o Transistor Funciona?
 
 O transistor funciona como uma **chave eletrônica** ou **amplificador de corrente**.
+
+---
 
 ### 🏷️ 1. Modo "Chave Liga/Desliga" (Saturação e Corte)
 - Se **nenhuma corrente** fluir para a **Base (B)** ➝ O transistor fica **desligado** (isto é, **corte**).
@@ -149,30 +149,29 @@ Onde:
 **(b)** Existe 2 tipos de transistor: **NPN** e PNP.
 **(c)** Todo transistor possui dois modos de trabalho: **Chave Liga-desliga** e Amplificador
 
+---
 
 ## Prática (1)
 
 Vamos acender um **LED** controlado por um **transistor NPN (BC548)**.
 
-### 🛠️ **Componentes:**
+### 🛠️ Componentes:
 - **1 Transistor BC548**
-- **1 Resistor de 1kΩ** (protege a base do transistor)
+- **1 Resistor de 1MΩ** (usar de divisor de tensão com o seu corpo)
 - **1 LED**
 - **1 Resistor de 330Ω** (limita a corrente do LED)
 - **1 Fonte de 5V** (pode ser uma pilha ou um Arduino)
 
-### 🔧 **Como Montar:**
-1. **Base (B)** conecta-se ao **GPIO de um microcontrolador** ou um botão com um **resistor de 1kΩ**.
+### 🔧 Como Montar:
+1. **Base (B)** conecta-se o resistor de 1MΩ, u um botão com um **resistor de 1kΩ**.
 2. **Coletor (C)** conecta-se ao **positivo do LED** (com resistor de 330Ω).
 3. **Emissor (E)** vai para o **GND**.
 
-### 🔄 **Funcionamento:**
+### 🔄 Funcionamento:
 - Quando o **GPIO** envia um sinal (3.3V ou 5V), uma pequena corrente entra na **Base**.
 - O transistor **liga** e permite uma corrente maior fluir do **Coletor para o Emissor**.
 - O **LED acende!**
 - Quando o GPIO desativa o sinal (0V), a corrente para e o LED **apaga**.
-
----
 
 ## 📌 **Resumo Final**
 ✅ O transistor **controla** o fluxo de corrente.  

@@ -6,8 +6,6 @@
 
 ## Impactos no seu Projeto
 
-* Construção de circuitos extras para o projeto. Exemplos:
-
 ### Circuitos Extras Utilizando o **Transistor BC548** para os Periféricos do Robô
 
 

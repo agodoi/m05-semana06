@@ -96,9 +96,9 @@ O que vamos usar são esses possíveis modelos:
 
 Um transistor bipolar (como o **BC548** e o **TIP41C**) possui **três terminais**:
 
-I)   **Base (B):** Controla o fluxo de corrente entre C e E.
-II)  **Coletor (C):** Entrada principal de corrente.
-III) **Emissor (E):** Saída da corrente.
+- I)   **Base (B):** Controla o fluxo de corrente entre C e E.
+- II)  **Coletor (C):** Entrada principal de corrente.
+- III) **Emissor (E):** Saída da corrente.
 
 👉 Existem dois tipos principais de transistores bipolares:
 - **NPN** (mais comum).

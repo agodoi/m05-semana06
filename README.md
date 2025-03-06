@@ -198,8 +198,7 @@ Onde:
 
 ### 🔧 Como Montar: siga exatamente o circuito da imagem
 
-
----
+<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/pratica2.png" width="1000">
 
 ## 🎛️ **Como Funciona?**
 1. **O Potenciômetro** ajusta a corrente que entra na **Base do transistor**.

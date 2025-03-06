@@ -180,7 +180,7 @@ Vamos acender um **LED** controlado por um **transistor NPN (BC548)**.
 ✅ É essencial para **sensores, motores, amplificadores, LEDs e circuitos digitais**.
 
 🔎 **Conclusão:** O transistor é um **super-herói** da eletrônica! 🦸‍♂️⚡ Ele pode **ligar/desligar circuitos**, **ampliar sinais** e está presente em **todos os dispositivos eletrônicos modernos**! 🚀
-
+ 
 
 
 

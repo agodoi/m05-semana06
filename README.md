@@ -82,6 +82,15 @@ O **BC548** é um transistor versátil que pode ser usado para:
 O **transistor** é um **componente eletrônico semicondutor** usado para amplificar ou chavear sinais elétricos. 
 Ele é fundamental na eletrônica moderna e está presente em 99% todos os circuitos eletrônicos.
 
+<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/transistor.jpeg" width="600">
+
+O que vamos usar são esses possíveis modelos:
+
+<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/transistor-bc548.jpg" width="300">
+
+<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/transistor-tip41.png" width="300">
+
+
 
 ### (2.2) **Estrutura Básica
 
@@ -127,7 +136,7 @@ Se aplicarmos uma pequena corrente na **Base**, da ordem de miliampéres, ela **
 Onde:
 - ( I_C ) = corrente no **Coletor**
 - ( I_B ) = corrente na **Base**
-- ( β ) (ou "ganho") = fator de amplificação do transistor
+- ( β ) (ou "ganho") = fator de amplificação do transistor. Todo modelo de transistor tem um β exclusivo. O β indica o quanto sensível ele é para liberar o fluxo de corrente entre C e E a partir de uma excitação de B. Valores típicos: 100 < β < 600. Precisa entrar no datasheet para saber o valore exato do seu transistor.
 
 **Exemplo prático:**  
 - Um microfone capta um som muito fraco (corrente pequena).
@@ -141,8 +150,9 @@ Onde:
 **(c)** Todo transistor possui dois modos de trabalho: **Chave Liga-desliga** e Amplificador
 
 
-## 📌 Exemplo de Circuito Prático
-Vamos usar um **LED** controlado por um **transistor NPN (BC548)**.
+## Prática (1)
+
+Vamos acender um **LED** controlado por um **transistor NPN (BC548)**.
 
 ### 🛠️ **Componentes:**
 - **1 Transistor BC548**
@@ -173,16 +183,118 @@ Vamos usar um **LED** controlado por um **transistor NPN (BC548)**.
 🔎 **Conclusão:** O transistor é um **super-herói** da eletrônica! 🦸‍♂️⚡ Ele pode **ligar/desligar circuitos**, **ampliar sinais** e está presente em **todos os dispositivos eletrônicos modernos**! 🚀
 
 
-Vamos nos concentrar nos itens em negrito.
-
-Quando se injeta uma pequena corrente positiva no pino B, uma avalanche de corrente é conduzida do pino C para o E.
 
 
-<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/transistor.jpeg" width="600">
+### 🏫 Aula Prática: **Demonstrando o Funcionamento do Transistor BC548 com Arduino e Monitor Plotter** 📊✨
+
+#### 🎯 **Objetivo:**
+Nesta aula, vamos utilizar um **transistor BC548** como um **amplificador de corrente**, controlado pelo **Arduino Uno**. Através do **Monitor Plotter** do Arduino IDE, analisaremos a variação de tensão na **Base** e no **Coletor**, visualizando como o transistor se comporta ao ligar e desligar um LED.
+
+---
+
+## 🛠️ **Materiais Necessários:**
+- 1 **Arduino Uno**
+- 1 **Transistor NPN BC548**
+- 1 **Resistor de 1kΩ** (para a base do transistor)
+- 1 **Resistor de 330Ω** (para limitar corrente do LED)
+- 1 **LED**
+- 1 **Potenciômetro de 10kΩ** (para controlar a corrente na Base)
+- **Fios jumper**
+- **Protoboard**
+
+---
+
+## 🔌 **Esquema de Ligação (Circuito)**
+
+```plaintext
+              +5V Arduino
+                 │
+         +───────┴───+
+         │  Potenciômetro  │
+         +───┬────┬───+
+             │    │
+             │    └───> Pino A0 (Arduino)  ← (Lê a tensão da Base)
+             │
+             ├──> Resistor 1kΩ
+             │
+             │
+            Base do BC548
+             │
+        Coletor ───> Resistor 330Ω ───> LED ───> GND
+             │
+        Emissor ───> GND
+```
+
+---
+
+## 🎛️ **Como Funciona?**
+1. **O Potenciômetro** ajusta a corrente que entra na **Base do transistor**.
+2. O **Arduino lê a tensão da Base** (pino A0).
+3. O transistor controla a corrente no **Coletor → Emissor**, acendendo ou apagando o LED.
+4. O **Monitor Plotter** exibe a relação entre a tensão na **Base** e no **Coletor**.
+5. Conforme giramos o **potenciômetro**, podemos visualizar a **zona de corte**, **saturação** e o **modo linear** do transistor.
+
+---
+
+## 💻 **Código para o Arduino**
+
+```cpp
+#define BASE_PIN A0  // Pino do potenciômetro (Base do transistor)
+#define COLETOR_PIN A1 // Pino conectado ao Coletor
+#define LED_PIN 9  // Pino PWM para o LED (pode simular a corrente no coletor)
+
+void setup() {
+    Serial.begin(9600);
+    pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+    int baseVoltage = analogRead(BASE_PIN);  // Lê a tensão na Base
+    int coletorVoltage = analogRead(COLETOR_PIN);  // Lê a tensão no Coletor
+
+    // Converte para volts (Arduino opera de 0 a 5V com resolução de 1024 bits)
+    float vBase = baseVoltage * (5.0 / 1023.0);
+    float vColetor = coletorVoltage * (5.0 / 1023.0);
+
+    // Controla o brilho do LED com a leitura da Base (simulando corrente no Coletor)
+    analogWrite(LED_PIN, map(baseVoltage, 0, 1023, 0, 255));
+
+    // Envia valores para o Monitor Plotter do Arduino
+    Serial.print("Base: ");
+    Serial.print(vBase);
+    Serial.print("V  ");
+
+    Serial.print("Coletor: ");
+    Serial.print(vColetor);
+    Serial.println("V");
+
+    delay(100);
+}
+```
+
+---
+
+## 📊 **O que esperar no Monitor Plotter?**
+- Quando giramos o **potenciômetro**, vemos a tensão na **Base** aumentando ou diminuindo.
+- A tensão no **Coletor** muda conforme a Base é polarizada.
+- No **modo de corte** (Base ≈ 0V), o LED **fica apagado**.
+- No **modo de saturação** (Base > 0.7V), o LED **acende totalmente**.
+- No **modo ativo** (entre 0.2V e 0.7V), o LED **varia o brilho** proporcionalmente.
+
+---
+
+## 📌 **Conclusão**
+Nesta aula prática, conseguimos visualizar no **Monitor Plotter** do Arduino como a tensão na **Base** afeta a corrente no **Coletor** do transistor. Isso nos permitiu demonstrar o funcionamento do **transistor BC548** como um **interruptor eletrônico** ou um **amplificador de sinal**.
+
+✅ **Demonstração clara dos estados de operação do transistor!**  
+✅ **Interatividade com controle de um LED!**  
+✅ **Monitor Plotter ajuda a visualizar a relação entre Base e Coletor!**  
+
+🔎 **Exploração extra:** Experimente substituir o LED por um motor pequeno ou um relé para ver como o transistor pode controlar dispositivos mais potentes! 🚀
+
+---
+
+### 🔥 **O que achou dessa aula prática? Algo a mais que gostaria de adicionar?** 🚀
 
 
-O que vamos usar são esses possíveis modelos:
 
-
-<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/transistor-bc548.jpg" width="300">
-<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/transistor-tip41.png" width="300">

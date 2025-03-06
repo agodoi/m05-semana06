@@ -81,5 +81,5 @@ O **BC548** é um transistor versátil que pode ser usado para:
 <img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/transistor.jpeg" width="600">
 
 
-<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/transistor-bc458-pinagem.jpg" width="300">
+<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/transistor-bc548-pinagem.jpg" width="300">
 <img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/transistor-tip41.png" width="300">

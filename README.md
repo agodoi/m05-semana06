@@ -74,3 +74,8 @@ O **BC548** é um transistor versátil que pode ser usado para:
 - **Controle de sensores** (detecção de objeto, leitor de código de barras).
 - **Ativação de periféricos** (acionamento de relés, buzzers, LEDs).
 - **Amplificação de sinais** (de sensores fracos para entrada do microcontrolador).
+
+
+# Funcionamento do Transistor
+
+<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/transistor.jpg" width="600">

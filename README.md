@@ -92,7 +92,7 @@ O que vamos usar são esses possíveis modelos:
 
 
 
-### (2.2) **Estrutura Básica
+### (2.2) Estrutura Básica
 
 Um transistor bipolar (como o **BC548** e o **TIP41C**) possui **três terminais**:
 
@@ -153,7 +153,7 @@ Onde:
 
 ## Prática (1)
 
-### 🎯 Objetivo: acender um **LED** controlado por um **transistor NPN (BC548)**.
+### 🎯 Objetivo: acender um LEDcontrolado por um transistor NPN (BC548).
 
 ### 🛠️ Componentes:
 - **1 Transistor BC548**
@@ -174,7 +174,7 @@ Onde:
 - Quando você remove o seu dedo, desativa o sinal (0V), a corrente para e o LED **apaga**.
 - **Caso o LED não acenda** com o seu toque, segure com a outra mão, **o POSITIVO do Arduino**.
 
-## 📌 **Resumo Final**
+## 📌 Resumo Final
 ✅ O transistor **controla** o fluxo de corrente.  
 ✅ Funciona como uma **chave eletrônica** ou **amplificador**.  
 ✅ Pequenas correntes na **Base** podem ativar **grandes correntes no Coletor**.  
@@ -245,7 +245,7 @@ void loop() {
 }
 ```
 
-### (2.6) 📊 **O que esperar no Monitor Plotter?**
+### (2.6) 📊 O que esperar no Monitor Plotter?
 - Quando giramos o **potenciômetro**, vemos a tensão na **Base** aumentando ou diminuindo.
 - A tensão no **Coletor** muda conforme a Base é polarizada.
 - No **modo de corte** (Base ≈ 0V), o LED **fica apagado**.
@@ -253,7 +253,7 @@ void loop() {
 - No **modo ativo** (entre 0.2V e 0.7V), o LED **varia o brilho** proporcionalmente.
 
 
-### (2.7) 📌 **Conclusão**
+### (2.7) 📌 Conclusão
 
 Nesta aula prática, conseguimos visualizar no **Monitor Plotter** do Arduino como a tensão na **Base** afeta a corrente no **Coletor** do transistor. Isso nos permitiu demonstrar o funcionamento do **transistor BC548** como um **interruptor eletrônico** ou um **amplificador de sinal**.
 

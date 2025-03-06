@@ -166,15 +166,12 @@ Vamos acender um **LED** controlado por um **transistor NPN (BC548)**.
 
 <img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/arduino-led-bc548.png" width="1000">
 
-1. **Base (B)** conecta-se o resistor de 1MΩ, u um botão com um **resistor de 1kΩ**.
-2. **Coletor (C)** conecta-se ao **positivo do LED** (com resistor de 330Ω).
-3. **Emissor (E)** vai para o **GND**.
 
 ### 🔄 Funcionamento:
-- Quando o **GPIO** envia um sinal (3.3V ou 5V), uma pequena corrente entra na **Base**.
+- Quando você tocar no pino (B) onde está o R de 1MΩ, o seu corpo liberará uma pequena corrente na entrada da base.
 - O transistor **liga** e permite uma corrente maior fluir do **Coletor para o Emissor**.
 - O **LED acende!**
-- Quando o GPIO desativa o sinal (0V), a corrente para e o LED **apaga**.
+- Quando você remove o seu dedo, desativa o sinal (0V), a corrente para e o LED **apaga**.
 
 ## 📌 **Resumo Final**
 ✅ O transistor **controla** o fluxo de corrente.  

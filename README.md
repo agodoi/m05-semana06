@@ -6,8 +6,7 @@
 
 ## Impactos no seu Projeto
 
-### (1) Circuitos Extras Utilizando o **Transistor BC548** para os Periféricos do Robô
-
+### Imagine quais circuitos você poderia desenvolver usando um transistor para adicionar no seu projeto. Aqui vão alguns exemplos:
 
 #### 1.1 Circuito de Detecção de Objeto Manipulado
 - **Descrição:** Um sensor de fim de curso ou um interruptor reed pode ser conectado ao braço manipulador do robô. Quando um objeto for coletado, o contato é fechado e um sinal pode ser enviado ao Raspberry Pi Pico.

@@ -4,7 +4,7 @@
 
 # Semama 06 - Polarização do Transistor
 
-## Impactos no seu Projeto
+## (1) Impactos no seu Projeto
 
 ### Imagine quais circuitos você poderia desenvolver usando um transistor para adicionar no seu projeto. Aqui vão alguns exemplos:
 

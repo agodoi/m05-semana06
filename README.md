@@ -168,7 +168,7 @@ Onde:
 
 
 ### 🔄 Funcionamento:
-- Quando você tocar no nó que une pino (B) e R de 1MΩ e o **fio laranja**, o seu corpo liberará uma pequena corrente na entrada da **Base**.
+- Quando você tocar no nó que une pino (B) e R de 1MΩ e o **fio azul**, o seu corpo liberará uma pequena corrente na entrada da **Base**.
 - O transistor **liga** e permite uma corrente maior fluir do **Coletor para o Emissor**.
 - O **LED acende!**
 - Quando você remove o seu dedo, desativa o sinal (0V), a corrente para e o LED **apaga**.

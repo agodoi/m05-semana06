@@ -168,7 +168,7 @@ Vamos acender um **LED** controlado por um **transistor NPN (BC548)**.
 
 
 ### 🔄 Funcionamento:
-- Quando você tocar no pino (B) onde está o R de 1MΩ, o seu corpo liberará uma pequena corrente na entrada da base.
+- Quando você tocar no nó que une pino (B) e R de 1MΩ e o **fio laranja**, o seu corpo liberará uma pequena corrente na entrada da base.
 - O transistor **liga** e permite uma corrente maior fluir do **Coletor para o Emissor**.
 - O **LED acende!**
 - Quando você remove o seu dedo, desativa o sinal (0V), a corrente para e o LED **apaga**.

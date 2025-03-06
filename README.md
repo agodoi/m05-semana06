@@ -29,7 +29,7 @@
 
 ---
 
-### 1.3 Indicador Visual de Estado (LED de Status)
+#### 1.3 Indicador Visual de Estado (LED de Status)
 - **Descrição:** LEDs podem ser usados para indicar estados operacionais dos periféricos (exemplo: objeto detectado, leitor ativo, erro, etc.).
 - **Uso do BC548:** Controle de corrente para acionamento de LEDs de alta intensidade sem sobrecarregar as saídas do microcontrolador.
 - **Exemplo de circuito:**
@@ -40,7 +40,7 @@
 
 ---
 
-### 1.4 Driver de Relé para Acionamento de Componentes Externos
+#### 1.4 Driver de Relé para Acionamento de Componentes Externos
 - **Descrição:** O Raspberry Pi Pico pode não fornecer corrente suficiente para acionar relés diretamente. Um circuito com o BC548 pode permitir o controle de relés para ligar/desligar atuadores mecânicos do robô.
 - **Uso do BC548:** O transistor pode funcionar como **driver de relé**, permitindo que uma corrente mais alta passe pelo relé sem sobrecarregar o microcontrolador.
 - **Exemplo de circuito:**
@@ -51,13 +51,13 @@
 
 ---
 
-### 1.5 Amplificação de Sinal de Sensores de Baixa Potência
+#### 1.5 Amplificação de Sinal de Sensores de Baixa Potência
 - **Descrição:** Caso algum sensor de proximidade ou fototransistor forneça um sinal muito fraco, o BC548 pode amplificar esse sinal antes de enviá-lo ao Raspberry Pi Pico.
 - **Uso do BC548:** Como amplificador de tensão ou corrente para sensores que operam com variação mínima de sinal.
 
 ---
 
-### 1.6 Circuito de Alerta Sonoro (Buzzer)
+#### 1.6 Circuito de Alerta Sonoro (Buzzer)
 - **Descrição:** Caso seja necessário alertar quando um objeto for coletado, um **buzzer piezoelétrico** pode ser acionado pelo Raspberry Pi Pico com a ajuda do BC548.
 - **Uso do BC548:** O transistor pode atuar como chave para permitir a corrente suficiente ao buzzer.
 - **Exemplo de circuito:**
@@ -68,13 +68,13 @@
 
 ---
 
-### Resumo
+#### Resumo
 O **BC548** é um transistor versátil que pode ser usado para:
 - **Controle de sensores** (detecção de objeto, leitor de código de barras).
 - **Ativação de periféricos** (acionamento de relés, buzzers, LEDs).
 - **Amplificação de sinais** (de sensores fracos para entrada do microcontrolador).
 
-
+---
 # (2) Transistor
 
 ## (2.1) O que é um transistor?

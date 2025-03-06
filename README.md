@@ -122,9 +122,8 @@ Imagine um botão pressão que ativa um motor.
 Se aplicarmos uma pequena corrente na **Base**, da ordem de miliampéres, ela **controla** uma corrente muito maior, da ordem de ampéres, do **Coletor para o Emissor**.
 
 💡 **Fórmula básica:**  
-\[
-I_C = β \times I_B
-\]
+`I_C = β * I_B`
+
 Onde:
 - \( I_C \) = corrente no **Coletor**
 - \( I_B \) = corrente na **Base**

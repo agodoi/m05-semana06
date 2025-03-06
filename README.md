@@ -186,13 +186,13 @@ Onde:
 
 ### 🎯 Objetivo: usar o Monitor Plotter do Arduino IDE e observar o comportamento do BC548 como liga/desliga
 
-### 🛠️ **Materiais Necessários:
+### 🛠️ Materiais Necessários:
 - 1 **Arduino Uno**
-- 1 **Transistor NPN BC548**
-- 1 **Resistor de 1kΩ** (para a base do transistor)
+- 1 **Transistor BC548**
+- 1 **Resistor de 1MΩ** (para a base do transistor)
 - 1 **Resistor de 330Ω** (para limitar corrente do LED)
 - 1 **LED**
-- 1 **Potenciômetro de 10kΩ** (para controlar a corrente na Base)
+- 1 **Potenciômetro de 1MΩ** (para controlar a corrente na Base)
 - **Fios jumper**
 - **Protoboard**
 
@@ -202,21 +202,19 @@ As medições você fará após a montagem. Por enquanto, concentre-se apenas no
 
 <img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/pratica2v2.png" width="1000">
 
-## 🎛️ **Como Funciona?**
+## 🎛️ Como Funciona?
 1. **O Potenciômetro** ajusta a corrente que entra na **Base do transistor**.
 2. O **Arduino lê a tensão da Base** (pino A0).
 3. O transistor controla a corrente no **Coletor → Emissor**, acendendo ou apagando o LED.
 4. O **Monitor Plotter** exibe a relação entre a tensão na **Base** e no **Coletor**.
 5. Conforme giramos o **potenciômetro**, podemos visualizar a **zona de corte**, **saturação** e o **modo linear** do transistor.
 
----
-
-## 💻 Código para o Arduino
+### 💻 Código para o Arduino: copie e cole esse código no seu Arduino IDE e grave no Arduino Uno
 
 ```
 #define BASE_PIN A0  // Pino do potenciômetro (Base do transistor)
 #define COLETOR_PIN A1 // Pino conectado ao Coletor
-#define LED_PIN 9  // Pino PWM para o LED (pode simular a corrente no coletor)
+#define LED_PIN 2  // Pino PWM para o LED (pode simular a corrente no coletor)
 
 void setup() {
     Serial.begin(9600);
@@ -246,8 +244,6 @@ void loop() {
     delay(100);
 }
 ```
-
----
 
 ## 📊 **O que esperar no Monitor Plotter?**
 - Quando giramos o **potenciômetro**, vemos a tensão na **Base** aumentando ou diminuindo.

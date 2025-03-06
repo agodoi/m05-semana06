@@ -75,15 +75,15 @@ O **BC548** é um transistor versátil que pode ser usado para:
 - **Amplificação de sinais** (de sensores fracos para entrada do microcontrolador).
 
 ---
-# (2) Transistor
+## (2) Transistor
 
-## (2.1) O que é um transistor?
+### (2.1) O que é um transistor?
 
 O **transistor** é um **componente eletrônico semicondutor** usado para amplificar ou chavear sinais elétricos. 
-Ele é um dos blocos fundamentais da eletrônica moderna e está presente em praticamente todos os circuitos eletrônicos.
+Ele é fundamental na eletrônica moderna e está presente em 99% todos os circuitos eletrônicos.
 
 
-## (2.2) **Estrutura Básica
+### (2.2) **Estrutura Básica
 
 Um transistor bipolar (como o **BC548** e o **TIP41C**) possui **três terminais**:
 
@@ -92,27 +92,32 @@ II)  **Coletor (C):** Entrada principal de corrente.
 III) **Emissor (E):** Saída da corrente.
 
 👉 Existem dois tipos principais de transistores bipolares:
-- **NPN** (mais comum)
+- **NPN** (mais comum).
 - **PNP**
 
 O **NPN** é o que usaremos como exemplo.
 
-## 📌 **Como o Transistor Funciona?**
+N ➝ Negativo, pino Coletor (C)
+P ➝ Positivo, pino Base (B)
+N ➝ Negativo, pino Emissor (E)
+
+## 📌 Como o Transistor Funciona?
+
 O transistor funciona como uma **chave eletrônica** ou **amplificador de corrente**.
 
 ### 🏷️ 1. Modo "Chave Liga/Desliga" (Saturação e Corte)
 - Se **nenhuma corrente** fluir para a **Base (B)** ➝ O transistor fica **desligado** (isto é, **corte**).
-- Se **uma pequena corrente** fluir para a **Base (B)** ➝ O transistor liga e permite uma **corrente maior** entre **Coletor (C) e Emissor (E)** (isto é, **saturação**).
+- Se **uma pequena corrente em [mA]** fluir para a **Base (B)** ➝ O transistor liga e permite uma **corrente maior em [A]** entre **Coletor (C) e Emissor (E)** (isto é, **saturação**).
 
 **Exemplo prático:**  
-Imagine um botão de campainha que ativa um motor.  
+Imagine um botão pressão que ativa um motor.
 - Quando o botão está solto (**Base sem corrente**), o motor está desligado.
 - Quando o botão é pressionado (**Base recebe corrente**), o motor liga.
 
 ---
 
 ### 🏷️ 2. Modo "Amplificador"
-Se aplicarmos uma pequena corrente na **Base**, ela **controla** uma corrente muito maior do **Coletor para o Emissor**.
+Se aplicarmos uma pequena corrente na **Base**, da ordem de miliampéres, ela **controla** uma corrente muito maior, da ordem de ampéres, do **Coletor para o Emissor**.
 
 💡 **Fórmula básica:**  
 \[

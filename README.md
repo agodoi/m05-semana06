@@ -184,9 +184,9 @@ Onde:
 
 ## Prática (2)
 
-### 🎯 Objetivo: usar o Monitor Plotter do Arduino IDE e observar o comportamento do BC548 como liga/desliga
+### (2.1) 🎯 Objetivo: usar o Monitor Plotter do Arduino IDE e observar o comportamento do BC548 como liga/desliga.
 
-### 🛠️ Materiais Necessários:
+### (2.2) 🛠️ Materiais Necessários:
 - 1 **Arduino Uno**
 - 1 **Transistor BC548**
 - 1 **Resistor de 1MΩ** (para a base do transistor)
@@ -196,20 +196,20 @@ Onde:
 - **Fios jumper**
 - **Protoboard**
 
-### 🔧 Como Montar: siga exatamente o circuito da imagem
+### (2.3) 🔧 Como Montar: siga exatamente o circuito da imagem
 
 As medições você fará após a montagem. Por enquanto, concentre-se apenas nos componentes.
 
 <img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/pratica2v3.png" width="1000">
 
-## 🎛️ Como Funciona?
+### (2.4) 🎛️ Como Funciona?
 1. **O Potenciômetro** ajusta a corrente que entra na **Base do transistor**.
 2. O **Arduino lê a tensão da Base** (pino A0).
 3. O transistor controla a corrente no **Coletor → Emissor**, acendendo ou apagando o LED.
 4. O **Monitor Plotter** exibe a relação entre a tensão na **Base** e no **Coletor**.
 5. Conforme giramos o **potenciômetro**, podemos visualizar a **zona de corte**, **saturação** e o **modo linear** do transistor.
 
-### 💻 Código para o Arduino: copie e cole esse código no seu Arduino IDE e grave no Arduino Uno
+### (2.5) 💻 Código para o Arduino: copie e cole esse código no seu Arduino IDE e grave no Arduino Uno
 
 ```
 #define BASE_PIN A0  // Pino do potenciômetro (Base do transistor)
@@ -245,27 +245,24 @@ void loop() {
 }
 ```
 
-## 📊 **O que esperar no Monitor Plotter?**
+### (2.6) 📊 **O que esperar no Monitor Plotter?**
 - Quando giramos o **potenciômetro**, vemos a tensão na **Base** aumentando ou diminuindo.
 - A tensão no **Coletor** muda conforme a Base é polarizada.
 - No **modo de corte** (Base ≈ 0V), o LED **fica apagado**.
 - No **modo de saturação** (Base > 0.7V), o LED **acende totalmente**.
 - No **modo ativo** (entre 0.2V e 0.7V), o LED **varia o brilho** proporcionalmente.
 
----
 
-## 📌 **Conclusão**
+### (2.7) 📌 **Conclusão**
+
 Nesta aula prática, conseguimos visualizar no **Monitor Plotter** do Arduino como a tensão na **Base** afeta a corrente no **Coletor** do transistor. Isso nos permitiu demonstrar o funcionamento do **transistor BC548** como um **interruptor eletrônico** ou um **amplificador de sinal**.
 
 ✅ **Demonstração clara dos estados de operação do transistor!**  
 ✅ **Interatividade com controle de um LED!**  
 ✅ **Monitor Plotter ajuda a visualizar a relação entre Base e Coletor!**  
 
-🔎 **Exploração extra:** Experimente substituir o LED por um motor pequeno ou um relé para ver como o transistor pode controlar dispositivos mais potentes! 🚀
-
 ---
 
-### 🔥 **O que achou dessa aula prática? Algo a mais que gostaria de adicionar?** 🚀
+## Prática (3)
 
-
-
+### (3.1) 🎯 Objetivo: substitua o LED + R por um relé de 5V que está na sua bancada e faça-o ligar ajustando o potenciômetro.

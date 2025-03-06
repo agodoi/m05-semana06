@@ -125,9 +125,9 @@ Se aplicarmos uma pequena corrente na **Base**, da ordem de miliampéres, ela **
 ```I_C = β * I_B```
 
 Onde:
-- \( I_C \) = corrente no **Coletor**
-- \( I_B \) = corrente na **Base**
-- \( β \) (ou "ganho") = fator de amplificação do transistor
+- ( I_C ) = corrente no **Coletor**
+- ( I_B ) = corrente na **Base**
+- ( β ) (ou "ganho") = fator de amplificação do transistor
 
 **Exemplo prático:**  
 - Um microfone capta um som muito fraco (corrente pequena).

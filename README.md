@@ -153,7 +153,7 @@ Onde:
 
 ## Prática (1)
 
-Vamos acender um **LED** controlado por um **transistor NPN (BC548)**.
+### 🎯 Objetivo: acender um **LED** controlado por um **transistor NPN (BC548)**.
 
 ### 🛠️ Componentes:
 - **1 Transistor BC548**
@@ -168,10 +168,11 @@ Vamos acender um **LED** controlado por um **transistor NPN (BC548)**.
 
 
 ### 🔄 Funcionamento:
-- Quando você tocar no nó que une pino (B) e R de 1MΩ e o **fio laranja**, o seu corpo liberará uma pequena corrente na entrada da base.
+- Quando você tocar no nó que une pino (B) e R de 1MΩ e o **fio laranja**, o seu corpo liberará uma pequena corrente na entrada da **Base**.
 - O transistor **liga** e permite uma corrente maior fluir do **Coletor para o Emissor**.
 - O **LED acende!**
 - Quando você remove o seu dedo, desativa o sinal (0V), a corrente para e o LED **apaga**.
+- **Caso o LED não acenda** com o seu toque, segure com a outra mão, **o POSITIVO do Arduino**.
 
 ## 📌 **Resumo Final**
 ✅ O transistor **controla** o fluxo de corrente.  
@@ -179,19 +180,13 @@ Vamos acender um **LED** controlado por um **transistor NPN (BC548)**.
 ✅ Pequenas correntes na **Base** podem ativar **grandes correntes no Coletor**.  
 ✅ É essencial para **sensores, motores, amplificadores, LEDs e circuitos digitais**.
 
-🔎 **Conclusão:** O transistor é um **super-herói** da eletrônica! 🦸‍♂️⚡ Ele pode **ligar/desligar circuitos**, **ampliar sinais** e está presente em **todos os dispositivos eletrônicos modernos**! 🚀
- 
-
-
-
-### 🏫 Aula Prática: **Demonstrando o Funcionamento do Transistor BC548 com Arduino e Monitor Plotter** 📊✨
-
-#### 🎯 **Objetivo:**
-Nesta aula, vamos utilizar um **transistor BC548** como um **amplificador de corrente**, controlado pelo **Arduino Uno**. Através do **Monitor Plotter** do Arduino IDE, analisaremos a variação de tensão na **Base** e no **Coletor**, visualizando como o transistor se comporta ao ligar e desligar um LED.
-
 ---
 
-## 🛠️ **Materiais Necessários:**
+## Prática (2)
+
+### 🎯 Objetivo: usar o Monitor Plotter do Arduino IDE e observar o comportamento do BC548 como liga/desliga
+
+### 🛠️ **Materiais Necessários:
 - 1 **Arduino Uno**
 - 1 **Transistor NPN BC548**
 - 1 **Resistor de 1kΩ** (para a base do transistor)
@@ -201,28 +196,8 @@ Nesta aula, vamos utilizar um **transistor BC548** como um **amplificador de cor
 - **Fios jumper**
 - **Protoboard**
 
----
+### 🔧 Como Montar: siga exatamente o circuito da imagem
 
-## 🔌 **Esquema de Ligação (Circuito)**
-
-```plaintext
-              +5V Arduino
-                 │
-         +───────┴───+
-         │  Potenciômetro  │
-         +───┬────┬───+
-             │    │
-             │    └───> Pino A0 (Arduino)  ← (Lê a tensão da Base)
-             │
-             ├──> Resistor 1kΩ
-             │
-             │
-            Base do BC548
-             │
-        Coletor ───> Resistor 330Ω ───> LED ───> GND
-             │
-        Emissor ───> GND
-```
 
 ---
 
@@ -235,9 +210,9 @@ Nesta aula, vamos utilizar um **transistor BC548** como um **amplificador de cor
 
 ---
 
-## 💻 **Código para o Arduino**
+## 💻 Código para o Arduino
 
-```cpp
+```
 #define BASE_PIN A0  // Pino do potenciômetro (Base do transistor)
 #define COLETOR_PIN A1 // Pino conectado ao Coletor
 #define LED_PIN 9  // Pino PWM para o LED (pode simular a corrente no coletor)

@@ -164,7 +164,7 @@ Vamos acender um **LED** controlado por um **transistor NPN (BC548)**.
 
 ### 🔧 Como Montar:
 
-<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/arduino-led-bc548.png" width="600">
+<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/arduino-led-bc548.png" width="1000">
 
 1. **Base (B)** conecta-se o resistor de 1MΩ, u um botão com um **resistor de 1kΩ**.
 2. **Coletor (C)** conecta-se ao **positivo do LED** (com resistor de 330Ω).

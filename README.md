@@ -13,15 +13,15 @@
 - **Descrição:** Um sensor de fim de curso ou um interruptor reed pode ser conectado ao braço manipulador do robô. Quando um objeto for coletado, o contato é fechado e um sinal pode ser enviado ao Raspberry Pi Pico.
 - **Uso do BC548:** O transistor pode ser utilizado como um **amplificador de sinal** ou como um **interruptor eletrônico**, garantindo que o sinal do sensor seja adequadamente processado.
 - **Exemplo de circuito:**
-  - Entrada do sensor conectada à base do BC548 com resistor de limitação.
+  - Entrada do sensor conectada à base do BC548 com potenciômetro de limitação de modo a liberar 3,3V na entrada do microcontrolador.
   - Coletor conectado à alimentação e emissor ao GPIO do Raspberry Pi Pico.
-  - Quando o sensor fechar o circuito, o transistor satura e ativa a entrada do microcontrolador.
+  - Quando o sensor fechar o circuito, o transistor satura e ativa a entrada do microcontrolador, liberando 3,3V.
 
 ---
 
 #### 2. Circuito de Ativação do Leitor de Código de Barras
 - **Descrição:** Para economizar energia, o leitor de código de barras pode ser ativado apenas quando necessário, evitando consumo excessivo.
-- **Uso do BC548:** Funcionando como **chave eletrônica**, o BC548 pode ser acionado por um GPIO do Raspberry Pi Pico para ligar/desligar o módulo do leitor.
+- **Uso do BC548:** Funcionando como **chave eletrônica**, o BC548 pode ser acionado por um pulso do GPIO do Raspberry Pi Pico para ligar/desligar o módulo do leitor.
 - **Exemplo de circuito:**
   - Base do BC548 conectada ao GPIO do Raspberry Pi Pico via resistor.
   - Coletor conectado ao positivo do leitor de código de barras.

@@ -114,7 +114,6 @@ O **NPN** é o que usaremos como exemplo.
 
 O transistor funciona como uma **chave eletrônica** ou **amplificador de corrente**.
 
----
 
 ### 🏷️ 1. Modo "Chave Liga/Desliga" (Saturação e Corte)
 - Se **nenhuma corrente** fluir para a **Base (B)** ➝ O transistor fica **desligado** (isto é, **corte**).
@@ -125,7 +124,7 @@ Imagine um botão pressão que ativa um motor.
 - Quando o botão está solto (**Base sem corrente**), o motor está desligado.
 - Quando o botão é pressionado (**Base recebe corrente**), o motor liga.
 
----
+
 
 ### 🏷️ 2. Modo "Amplificador"
 Se aplicarmos uma pequena corrente na **Base**, da ordem de miliampéres, ela **controla** uma corrente muito maior, da ordem de ampéres, do **Coletor para o Emissor**.

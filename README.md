@@ -98,7 +98,9 @@ III) **Emissor (E):** Saída da corrente.
 O **NPN** é o que usaremos como exemplo.
 
 N ➝ Negativo, pino Coletor (C)
+
 P ➝ Positivo, pino Base (B)
+
 N ➝ Negativo, pino Emissor (E)
 
 ## 📌 Como o Transistor Funciona?

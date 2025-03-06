@@ -262,6 +262,8 @@ Nesta aula prática, conseguimos visualizar no **Monitor Plotter** do Arduino co
 
 ---
 
-## Prática (3)
+## Ponderada
 
 ### (3.1) 🎯 Objetivo: substitua o LED + R por um relé de 5V que está na sua bancada e faça-o ligar ajustando o potenciômetro.
+
+### (3.2) Preencher o relatório que estará disponível aqui momento antes da aula.

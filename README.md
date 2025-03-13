@@ -163,7 +163,7 @@ Onde:
 
 ### 🔧 Como Montar: siga exatamente o circuito da imagem
 
-<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/pratica1v4.png" width="1000">
+<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/pratica1v5.png" width="1000">
 
 
 ### 🔄 Funcionamento:

@@ -199,7 +199,7 @@ Onde:
 
 As medições você fará após a montagem. Por enquanto, concentre-se apenas nos componentes.
 
-<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/pratica2v3.png" width="1000">
+<img src="https://github.com/agodoi/m05-semana06/blob/main/imgs/pratica2v5.png" width="1000">
 
 ### (2.4) 🎛️ Como Funciona?
 1. **O Potenciômetro** ajusta a corrente que entra na **Base do transistor**.
